@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="@color/upBoard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/welcomep"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_60sdp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/inter_extra_light"
+                android:layout_height="@dimen/_20sdp"
+                android:text="7 April 2005"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:layout_height="@dimen/_30sdp"
+                android:textColor="@color/white"
+                android:text="Hey,NAME"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_25sdp"
+        app:layout_constraintTop_toTopOf="@+id/welcomep"
+        app:layout_constraintBottom_toBottomOf="@+id/welcomep"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.quakehome.HomeFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout="@layout/fragment_home" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        app:cardBackgroundColor="@color/bottombar"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+            <!--home_fill-->
+            <Button
+                android:id="@+id/homebtn"
+                android:background="@drawable/home_fill"
+
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                app:backgroundTint="@color/white" />
+
+            <!--notif_emp-->
+            <Space
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/notifbtn"
+                android:background="@drawable/notif_emp"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_37sdp"
+                app:backgroundTint="@color/white" />
+
+            <Space
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent" />
+            <!--profile_emp-->
+            <Button
+                android:id="@+id/profbutton"
+                android:background="@drawable/profile_emp"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_37sdp"
+                app:backgroundTint="@color/white" />
+
+            <Space
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent" />
+            <!--inf_emp-->
+            <Button
+                android:id="@+id/infbtn"
+                android:background="@drawable/info_emp"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_37sdp"
+                app:backgroundTint="@color/white" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
